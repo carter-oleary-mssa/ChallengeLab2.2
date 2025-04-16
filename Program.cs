@@ -2,7 +2,7 @@
 string validPassword = "password";
 
 int tries = 3;
-while(true)
+while(tries > 0)
 {
     Console.Write("Enter username: ");
     string userid = Console.ReadLine();
@@ -19,9 +19,5 @@ while(true)
         tries--;
         Console.WriteLine("Invalid userid or password");
         Console.WriteLine($"{tries} tries remaining");
-        if(tries == 0)
-        {
-            break;
-        }
     }
 }
